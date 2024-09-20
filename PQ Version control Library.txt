@@ -15,7 +15,7 @@
 	//
 	//
 	//
-[
+M = [
     /**
      * Provide a simplified method for programmatically contructing table from
      * relationships between columns. Accepts a list of lists of the structure:
