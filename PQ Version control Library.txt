@@ -1,20 +1,3 @@
-	// A collection a useful tools for building Microsoft Power BI queries.
-	//
-	// Author:  Injae Park, Microsoft MVP
-	// Repo:    https://github.com/PowerBIPark/PowerBI_MQueryTest
-	// License: MIT. Code is provided as is with no warranty.
-	//
-	//
-	//
-	// How to:
-	// Copy this entire code
-	// And paste it into a blank query Advanced Editor
-	// Rename the query "M"
-	// And you can add functions by rightclicking and selecting "Add functions" to your report
-	// You need to have a parameter called "Parameter2" that points to "/PowerBIPark/PowerBI_MQueryTest/main/Simple%20Date%20List.txt" 
-	//
-	//
-	//
 [
     /**
      * Provide a simplified method for programmatically contructing table from
@@ -574,28 +557,14 @@ Value.ViewFunction = Value.ViewFunction
 in
     Source,
 
-    /**
-     * Check if all elements of a list satisfy a given predicate.
-     *
-     * :: (a -> Bool) -> [a] -> Bool
-     */
-    All = (p as function) =>
-        (xs as list) =>
-            And(Map(p, xs)),
+ 
 
     /**
      * Logical conjunction of a list of boolean values.
      *
      * :: [Bool] -> Bool
      */
-    And = List.AllTrue,
+    And = List.AllTrue
 
-    /**
-     * Check if any elements of a list satisfy a given predicate.
-     *
-     * :: (a -> Bool) -> [a] -> Bool
-     */
-    Any = (p as function) =>
-        (xs as list) =>
-            Or(Map(p, xs))
+
 ]
